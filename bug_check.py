@@ -63,13 +63,13 @@ def get_investigating_bugs():
 def get_conflicting_bugs():
     """
     Get a list of bugs for which their status is 'investigating' in the local
-    database, but 'RESOLVED at bugzilla
+    database, but 'RESOLVED' at bugzilla
 
     INPUTS: None
     OUTPUT: List of bugids which are 'conflicting' as per the above definition
     """
 
-    bmo = BMO Agent()
+    bmo = BMOAgent()
     conflicting = []
 
     #Get the local db bugs marked as 'investigating'
